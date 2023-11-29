@@ -1,6 +1,7 @@
 import pandas as pd
 from transform import transform_data_with_pandas
 
+
 def test_transformed_data_is_dataframe():
     df = transform_data_with_pandas()
     assert isinstance(df, pd.DataFrame)
