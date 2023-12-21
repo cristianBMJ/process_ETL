@@ -1,6 +1,6 @@
 # Globant: Code Challenge  
 
-Process ETL that picks up data from a source, transforms it, and loads it into BigQuery. Use Agile methodologies and version control tools.
+Implement an ETL process that picks up data from a source, transforms it, and automatically loads it into BigQuery using Airflow. Utilize Agile methodologies and version control tools.
 
 
 ​
