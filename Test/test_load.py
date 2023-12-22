@@ -22,8 +22,8 @@ def test_table(bq_client, test_dataset):
     table_id = 'test_table'
     table_ref = test_dataset.table(table_id)
     schema = [
-        bigquery.SchemaField('column1', 'INTEGER'),
-        bigquery.SchemaField('column2', 'STRING'),
+        bigquery.SchemaField('column1', 'INTEGER', mode='NULLABLE' ),
+        bigquery.SchemaField('column2', 'string', mode='NULLABLE' ),
         # Add more schema fields as needed
     ]
     table = bigquery.Table(table_ref, schema=schema)
@@ -41,12 +41,18 @@ def test_load_to_bigquery(bq_client, test_table):
     ]
     columns = ['column1', 'column2']  # Adjust column names based on your schema
 
+    schema = [
+        bigquery.SchemaField('column1', 'INTEGER', mode='NULLABLE' ),
+        bigquery.SchemaField('column2', 'string', mode='NULLABLE' ),
+        # Add more schema fields as needed
+    ]
+
     # Convert the data to DataFrame (using Pandas for example)
     import pandas as pd
     df = pd.DataFrame(data, columns=columns)
 
     # Load data into BigQuery
-    job_config = bigquery.LoadJobConfig(schema=columns, write_disposition='WRITE_TRUNCATE')
+    job_config = bigquery.LoadJobConfig(schema= schema, write_disposition='WRITE_TRUNCATE')
     job = bq_client.load_table_from_dataframe(df, test_table, job_config=job_config)
 
     # Wait for the job to complete
