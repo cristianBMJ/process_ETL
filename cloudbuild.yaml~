@@ -1,0 +1,18 @@
+steps:
+  # Step 1: Install dependencies (if required)
+  - name: 'python:3.9'
+    entrypoint: 'pip'
+    args: ['install', '-r', 'requirements.txt']
+
+  # Step 2: Run tests using Pytest
+  - name: 'python:3.9'
+    entrypoint: 'pytest'
+    args: ['./Test']
+
+  # Step 3: Build and package your application (if applicable)
+
+  # Step 4: Deploy to BigQuery or any other target environment
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['functions', 'deploy', 'my-function', '--trigger-http', '--runtime=python39']
+    dir: './ETL'
+    timeout: '1600s'
