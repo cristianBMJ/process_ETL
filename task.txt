@@ -1,1 +1,0 @@
-Make scripts bash for build structure project
