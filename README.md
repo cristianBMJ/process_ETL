@@ -18,7 +18,7 @@ Create a folder named `DAGs` in the  **Airflow** directory containing the file `
 
 ### Initialize Airflow Database:
 
-![alt text](http://url/to/img.png)
+![alt text](file:///home/cris/Pictures/Screenshot%20from%202023-12-28%2016-28-56.png)
 
 ### Start the Airflow Webserver:
 
