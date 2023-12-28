@@ -4,7 +4,8 @@ Implement an ETL process that picks up data from a source, transforms it, and au
 
 # Table of Contents
 - [Usage](#usage)
-
+- [Features](#Features)
+- [Contact](#Contact)
 
 # Usage
 
