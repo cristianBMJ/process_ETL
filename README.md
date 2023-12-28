@@ -41,5 +41,5 @@ Open a browser and go to localhost:8080 to access the Airflow UI.
 
 # Contact
 
-​The data is obtaind
+Cristian MB cristianj3006@gmail.com
     
