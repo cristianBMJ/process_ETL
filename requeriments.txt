@@ -5,5 +5,5 @@ request
 pytest
 google-cloud-bigquery
 airflow
-# enter versiony
+
 
