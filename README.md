@@ -1,6 +1,6 @@
 # Globant: Code Challenge  
 
-Implement an ETL process that picks up data from a free fake [API](https://jsonplaceholder.typicode.com/), transforms it, and automatically loads it into BigQuery using Airflow. Utilize Agile methodologies, testing and version control tools.
+Implement an ETL process that extracts data from a free fake [API](https://jsonplaceholder.typicode.com/), transforms it, and automatically loads it into BigQuery using Airflow. Utilize Agile methodologies, testing and version control tools.
 
 # Table of Contents
 - [Installation](#Installation)
