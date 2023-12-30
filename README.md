@@ -6,7 +6,9 @@ Implement an ETL process that extracts data from a free fake [API](https://jsonp
 - [Installation](#Installation)
 - [Usage](#usage)
 - [Features](#Features)
+- [Troubleshoot](#Troubleshoot)
 - [Contact](#Contact)
+  
 
 # Installation
 
@@ -38,6 +40,8 @@ Open a browser and go to localhost:8080 to access the Airflow UI.
 
 
 # Features
+
+# Troubleshoots
 
 # Contact
 
