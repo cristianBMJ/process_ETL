@@ -20,10 +20,17 @@ Create a folder named `DAGs` in the  **Airflow** directory containing the file `
 
 ### Initialize Airflow Database:
 
+```bash
+airflow db init
+```
+
 ![alt text](https://github.com/cristianBMJ/process_ETL/blob/main/Images/init.png)
 
 ### Start the Airflow Webserver:
 
+```bash
+airflow webserver --port 8080
+```
 ![alt text](https://github.com/cristianBMJ/process_ETL/blob/main/Images/webserver.png)
 
 Open a browser and go to localhost:8080 to access the Airflow UI.
